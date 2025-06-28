@@ -19,3 +19,6 @@ In this project, two major components are implemented: the Server and the Client
 The server uses a ServerSocket to accept connections and maintains a list of connected client sockets. For each new client, the server creates a new ClientHandler thread, which keeps listening to the messages from that specific client. The server then uses a broadcast mechanism to send incoming messages to all other clients except the sender. The use of threads ensures that the server does not block while waiting for input from any one client.
 
 The client uses a regular Socket to connect to the server on a specific IP address and port (in this case, localhost and port 12345). Once connected, the client starts two parallel operations: one for reading input from the user and sending it to the server, and another for constantly listening to messages from the server and displaying them. This non-blocking structure is achieved through multithreading.
+
+OUTPUT:
+![Image](https://github.com/user-attachments/assets/544354f8-cbe0-49d4-aaed-d9e5149f8c4e)
