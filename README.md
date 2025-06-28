@@ -21,4 +21,6 @@ The server uses a ServerSocket to accept connections and maintains a list of con
 The client uses a regular Socket to connect to the server on a specific IP address and port (in this case, localhost and port 12345). Once connected, the client starts two parallel operations: one for reading input from the user and sending it to the server, and another for constantly listening to messages from the server and displaying them. This non-blocking structure is achieved through multithreading.
 
 OUTPUT:
-![Image](https://github.com/user-attachments/assets/544354f8-cbe0-49d4-aaed-d9e5149f8c4e)
+![Image](https://github.com/user-attachments/assets/1d75484a-fb75-4f03-88b7-ace4c9ab6ea9)
+![Image](https://github.com/user-attachments/assets/e84ba6f2-9593-407e-827a-de233a48d1eb)
+
